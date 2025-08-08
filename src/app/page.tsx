@@ -37,7 +37,8 @@ export default function Home() {
     let mounted = true;
     const fetchCards = async () => {
       try {
-        const res = await fetch("/api/cards");
+        const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+        const res = await fetch(`${base}/cards.json`);
         if (!res.ok) throw new Error("Failed to fetch cards");
         const data = (await res.json()) as Card[];
         if (!mounted) return;
