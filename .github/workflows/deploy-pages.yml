@@ -26,12 +26,11 @@ jobs:
           cache: npm
       - name: Install deps
         run: npm ci
-      - name: Build
+      - name: Build static site
         env:
-          NEXT_BASE_PATH: ${{ vars.NEXT_BASE_PATH }}
+          NEXT_BASE_PATH: /${{ github.event.repository.name }}
         run: |
           npm run build
-          npm run export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

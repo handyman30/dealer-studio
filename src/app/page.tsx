@@ -29,7 +29,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
+    const root = document.documentElement;
+    root.classList.toggle("dark", theme === "dark");
   }, [theme]);
 
   useEffect(() => {

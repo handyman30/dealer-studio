@@ -17,16 +17,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --card: #0f1115;
-    --muted: #9ca3af;
-    --primary: #3b82f6;
-    --primary-600: #60a5fa;
-    --ring: #60a5fa;
-  }
+/* Explicit dark mode class override for runtime toggling */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card: #0f1115;
+  --muted: #9ca3af;
+  --primary: #3b82f6;
+  --primary-600: #60a5fa;
+  --ring: #60a5fa;
 }
 
 body {
