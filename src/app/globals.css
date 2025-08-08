@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #1d4ed8;
+  --primary-600: #2563eb;
+  --ring: #3b82f6;
 }
 
 @theme inline {
@@ -16,6 +21,11 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --card: #0f1115;
+    --muted: #9ca3af;
+    --primary: #3b82f6;
+    --primary-600: #60a5fa;
+    --ring: #60a5fa;
   }
 }
 
@@ -23,4 +33,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.shadow-card {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.transition-border {
+  transition: box-shadow 200ms ease, border-color 200ms ease;
 }

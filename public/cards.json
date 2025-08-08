@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Heading 1",
+    "description": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Expedita vel at ut, ducimus accusantium, consequuntur sapiente sit inventore commodi deleniti"
+    ],
+    "imageUrl": "https://res.cloudinary.com/total-dealer/image/upload/v1687754017/test/brisbane_vgpzva.jpg",
+    "cta": "Button 1"
+  },
+  {
+    "id": 2,
+    "title": "Heading 2",
+    "description": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedidodit delectus distinctio qui nostrum? Minima iusto facilis nam doloribus enim. Veritatis aliquam itaque."
+    ],
+    "imageUrl": "https://res.cloudinary.com/total-dealer/image/upload/v1687754017/test/brisbane_vgpzva.jpg",
+    "cta": "Button 2"
+  },
+  {
+    "id": 3,
+    "title": "Heading 3",
+    "description": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quibusdamhic, autem repudiandae animi quos inventor.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Ipsum molestias accusamus vitae architecto alias."
+    ],
+    "imageUrl": "https://res.cloudinary.com/total-dealer/image/upload/v1687754017/test/brisbane_vgpzva.jpg",
+    "cta": "Button 3"
+  }
+]
+
