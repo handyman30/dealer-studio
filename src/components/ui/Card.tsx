@@ -16,7 +16,7 @@ export function Card({ id, title, imageUrl, description, cta }: CardProps) {
 
   return (
     <article
-      className={`bg-[var(--card)] rounded-xl overflow-hidden border transition-border shadow-card ${isActive ? "border-[3px] border-[var(--ring)]" : "border border-black/10 dark:border-white/10"}`}
+      className={`bg-[var(--card)] rounded-xl overflow-hidden border transition-border shadow-card h-full flex flex-col ${isActive ? "border-[3px] border-[var(--ring)]" : "border border-black/10 dark:border-white/10"}`}
       data-testid={`card-${id}`}
     >
       <div className="relative group">
@@ -33,16 +33,16 @@ export function Card({ id, title, imageUrl, description, cta }: CardProps) {
           </span>
         </div>
       </div>
-      <div className="p-5">
+      <div className="p-5 flex flex-col flex-1">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        {description.map((para, i) => (
-          <p key={i} className="text-sm text-[var(--muted)] mb-3">
-            {para}
-          </p>
-        ))}
+        <div className="text-sm text-[var(--muted)] space-y-3 flex-1">
+          {description.map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
         <button
           onClick={() => setSelectedCardId(id)}
-          className="w-full mt-2 rounded-full bg-[var(--primary)] hover:bg-[var(--primary-600)] text-white py-2 text-sm font-semibold"
+          className="w-full mt-4 rounded-full bg-[var(--primary)] hover:bg-[var(--primary-600)] text-white py-2 text-sm font-semibold"
           data-testid={`card-button-${id}`}
         >
           {cta}
